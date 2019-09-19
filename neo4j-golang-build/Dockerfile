@@ -22,8 +22,8 @@ ENV LD_LIBRARY_PATH=/seabolt/build/dist/lib
 ENV DYLD_LIBRARY_PATH=/seabolt/build/dist/lib
 
 # Run the image as a non-root user
-RUN useradd -m myuser
-USER myuser
+#RUN useradd -m myuser
+#USER myuser
 
 COPY entrypoint.sh /entrypoint.sh
 
